@@ -1,0 +1,19 @@
+[versions]
+kotlin-compiler="2.2.20-RC"
+
+[libraries]
+gradle-api = { group = "dev.gradleplugins", name = "gradle-api", version = "8.0" }
+kotlin-compiler-internal-test-framework = { module = "org.jetbrains.kotlin:kotlin-compiler-internal-test-framework", version.ref = "kotlin-compiler" }
+kotlin-compiler = { module = "org.jetbrains.kotlin:kotlin-compiler", version.ref = "kotlin-compiler" }
+kotlin-test-junit5 = { module = "org.jetbrains.kotlin:kotlin-test-junit5", version.ref = "kotlin-compiler" }
+kgp-compile-only = "org.jetbrains.kotlin:kotlin-gradle-plugin:2.0.0"
+clikt = "com.github.ajalt.clikt:clikt:5.0.1"
+kotlin-reflect = { module = "org.jetbrains.kotlin:kotlin-reflect", version.ref = "kotlin-compiler" }
+kotlin-script-runtime = { module = "org.jetbrains.kotlin:kotlin-script-runtime", version.ref = "kotlin-compiler" }
+kotlin-annotations-jvm = { module = "org.jetbrains.kotlin:kotlin-annotations-jvm", version.ref = "kotlin-compiler" }
+
+[plugins]
+kgp = { id = "org.jetbrains.kotlin.jvm", version = "2.2.20-RC" }
+librarian = { id = "com.gradleup.librarian", version = "0.1.1-SNAPSHOT-a596fab8122088023d823b38401a018acb5ece43" }
+gratatouille = { id = "com.gradleup.gratatouille", version = "0.1.0" }
+ksp = { id = "com.google.devtools.ksp", version = "2.2.20-RC-2.0.2" }

@@ -1,10 +1,11 @@
 import com.gradleup.librarian.gradle.Librarian
 
 plugins {
-  alias(libs.plugins.kgp)
-  alias(libs.plugins.librarian)
-  alias(libs.plugins.gratatouille)
-  alias(libs.plugins.ksp)
+  alias(libs.plugins.kgp).apply(false)
+  alias(libs.plugins.librarian).apply(false)
+  alias(libs.plugins.gratatouille).apply(false)
+  alias(libs.plugins.ksp).apply(false)
+  alias(libs.plugins.nmcp).apply(false)
 }
 
 Librarian.root(project)

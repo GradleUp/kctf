@@ -25,10 +25,6 @@ Write your abstract tests:
 ```kotlin
 @TestMetadata("compiler-tests/src/test/data/box")
 open class AbstractBoxTest : AbstractFirLightTreeBlackBoxCodegenTest() {
-  override fun createKotlinStandardLibrariesPathProvider(): KotlinStandardLibrariesPathProvider {
-    return ClasspathBasedStandardLibrariesPathProvider
-  }
-
   override fun configure(builder: TestConfigurationBuilder) {
     super.configure(builder)
 

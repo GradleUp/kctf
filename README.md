@@ -16,7 +16,7 @@ plugins {
 
 dependencies {
   // Add the kctf runtime, it pulls the kotlin test framework transitively
-  testImplementation(libs.kctf.runtime)
+  testImplementation("org.gradleup.kctf:kctf-runtime:2.2.20-RC-0.0.0")
 }
 ```
 

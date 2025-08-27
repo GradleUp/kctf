@@ -1,6 +1,6 @@
 # Kctf
 
-Kctf is a Gradle Plugin for the Kotlin Compiler Test Framework (Kctf).
+Kctf is a Gradle Plugin for the Kotlin Compiler Test Framework (KCTF).
 
 It factors some of the Gradle configuration and boilerplate needed to setup tests for your Kotlin compiler plugin.
 

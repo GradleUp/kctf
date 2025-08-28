@@ -7,6 +7,7 @@ import org.gradle.api.provider.Provider
 import org.gradle.api.tasks.JavaExec
 import org.gradle.api.tasks.TaskProvider
 import org.gradle.api.tasks.testing.Test
+import org.gradle.process.CommandLineArgumentProvider
 import org.jetbrains.kotlin.gradle.dsl.KotlinJvmProjectExtension
 import java.io.File
 
@@ -37,7 +38,10 @@ abstract class KctfExtension(private val project: Project) {
         project.file("src/test/java").relativeTo(project.rootDir).path
       },
       root = project.provider { project.rootDir.absolutePath },
-    )
+    ).configure {
+      // Why is this needed? output.classesDirs above should carry task dependencies.
+      it.dependsOn("compileTestKotlin")
+    }
 
     project.tasks.named("test").configure {
       it as Test
@@ -65,7 +69,7 @@ internal fun Project.registerKctfGenerateSourcesTask(
    */
   return tasks.register(taskName, JavaExec::class.java) {
     it.classpath(configuration)
-    it.setArgs(
+    it.argumentProviders.add(CommandLineArgumentProvider {
       listOf(
         "--test-classes-dirs",
         testClassesDirs.joinToString(File.pathSeparator),
@@ -74,7 +78,7 @@ internal fun Project.registerKctfGenerateSourcesTask(
         "--output-directory-relative-to-root",
         outputDirectoryRelativeToRoot.get(),
       )
-    )
+    })
     it.mainClass.set("kctf.MainKt")
     it.workingDir(root.get())
   }

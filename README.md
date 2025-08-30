@@ -20,7 +20,7 @@ dependencies {
 }
 ```
 
-Write your abstract tests:
+Write your abstract tests in `src/test/kotlin/com/example`:
 
 ```kotlin
 @TestMetadata("compiler-tests/src/test/data/box")

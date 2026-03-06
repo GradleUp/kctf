@@ -1,7 +1,7 @@
 package kctf
 
 import gratatouille.tasks.GInternal
-import org.jetbrains.kotlin.generators.generateTestGroupSuiteWithJUnit5
+import org.jetbrains.kotlin.generators.dsl.junit5.generateTestGroupSuiteWithJUnit5
 import java.io.File
 import java.net.URLClassLoader
 
@@ -52,7 +52,7 @@ fun kctfGenerateSources(
         testDataRoot = root,
         testsRoot = outputDirectoryRelativeToRoot
       ) {
-        testClass(testKClass = clazz, useJunit4 = false) {
+        testClass(testKClass = clazz) {
           model(modelPath)
         }
       }

@@ -1,0 +1,8 @@
+public final class kctf/GenerateTestSourcesKt {
+	public static final fun kctfGenerateSources (Ljava/util/List;Ljava/util/List;Ljava/lang/String;)V
+}
+
+public final class kctf/MainKt {
+	public static final fun main ([Ljava/lang/String;)V
+}
+

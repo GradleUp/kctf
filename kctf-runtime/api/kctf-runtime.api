@@ -1,0 +1,17 @@
+public final class kctf/ClasspathBasedStandardLibrariesPathProvider : org/jetbrains/kotlin/test/services/KotlinStandardLibrariesPathProvider {
+	public static final field INSTANCE Lkctf/ClasspathBasedStandardLibrariesPathProvider;
+	public fun commonStdlibForTests ()Ljava/io/File;
+	public fun defaultJsStdlib ()Ljava/io/File;
+	public fun fullJsStdlib ()Ljava/io/File;
+	public fun getAnnotationsJar ()Ljava/io/File;
+	public fun jvmAnnotationsForTests ()Ljava/io/File;
+	public fun kotlinTestJarForTests ()Ljava/io/File;
+	public fun kotlinTestJsKLib ()Ljava/io/File;
+	public fun minimalRuntimeJarForTests ()Ljava/io/File;
+	public fun reflectJarForTests ()Ljava/io/File;
+	public fun runtimeJarForTests ()Ljava/io/File;
+	public fun runtimeJarForTestsWithJdk8 ()Ljava/io/File;
+	public fun scriptRuntimeJarForTests ()Ljava/io/File;
+	public fun scriptingPluginFilesForTests ()Ljava/util/Collection;
+}
+

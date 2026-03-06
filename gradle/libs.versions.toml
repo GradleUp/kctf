@@ -1,5 +1,5 @@
 [versions]
-kotlin-compiler="2.2.20-RC"
+kotlin-compiler="2.3.10"
 
 [libraries]
 gradle-api = { group = "dev.gradleplugins", name = "gradle-api", version = "8.0" }
@@ -13,8 +13,8 @@ kotlin-script-runtime = { module = "org.jetbrains.kotlin:kotlin-script-runtime",
 kotlin-annotations-jvm = { module = "org.jetbrains.kotlin:kotlin-annotations-jvm", version.ref = "kotlin-compiler" }
 
 [plugins]
-kgp = { id = "org.jetbrains.kotlin.jvm", version = "2.2.20-RC" }
+kgp = { id = "org.jetbrains.kotlin.jvm", version = "2.3.10" }
 nmcp = { id = "com.gradleup.nmcp", version = "1.1.1-SNAPSHOT-001d5d74ed9af247096b58a59c99bba475fecead" }
-librarian = { id = "com.gradleup.librarian", version = "0.1.1-SNAPSHOT-a596fab8122088023d823b38401a018acb5ece43" }
+librarian = { id = "com.gradleup.librarian", version = "0.2.2-SNAPSHOT-e8574739fa730c6118181ba7b8cf7f559a568fd0" }
 gratatouille = { id = "com.gradleup.gratatouille", version = "0.1.0" }
-ksp = { id = "com.google.devtools.ksp", version = "2.2.20-RC-2.0.2" }
+ksp = { id = "com.google.devtools.ksp", version = "2.3.6" }

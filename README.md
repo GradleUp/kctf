@@ -1,3 +1,15 @@
+<header>
+  <div align="center">
+
+[![Slack](https://img.shields.io/static/v1?label=gradle-community&message=gradleup&color=A97BFF&logo=slack&style=flat-square)](https://gradle-community.slack.com/archives/C07GJEMUZDH)
+
+[![Maven Central](https://img.shields.io/maven-central/v/com.gradleup.kctf/kctf-gradle-plugin?style=flat-square)](https://central.sonatype.com/namespace/com.gradleup.kctf)
+[![Maven Snapshots](https://img.shields.io/maven-metadata/v?metadataUrl=https%3A%2F%2Fcentral.sonatype.com%2Frepository%2Fmaven-snapshots%2Fcom%2Fgradleup%2Fkctf%2Fkctf-gradle-plugin%2Fmaven-metadata.xml&style=flat-square&label=maven-snapshots&color=%2300538A&strategy=latestProperty)](https://central.sonatype.com/repository/maven-snapshots/com/gradleup/kctf/kctf-gradle-plugin/maven-metadata.xml)
+[![Gradleup Snapshots](https://img.shields.io/maven-metadata/v?metadataUrl=https%3A%2F%2Fstorage.googleapis.com%2Fgradleup%2Fm2%2Fcom%2Fgradleup%2Fkctf%2Fkctf-gradle-plugin%2Fmaven-metadata.xml&style=flat-square&label=gradleup-snapshots&color=%2315252D&strategy=latestProperty)](https://storage.googleapis.com/gradleup/m2/com/gradleup/kctf/kctf-gradle-plugin/maven-metadata.xml)
+  </div> 
+</header>
+
+
 # Kctf
 
 Kctf is a Gradle Plugin for the Kotlin Compiler Test Framework (KCTF).

@@ -23,12 +23,12 @@ Configure your build
 ```kotlin
 plugins {
   id("org.jetbrains.kotlin.jvm")
-  id("com.gradleup.kctf").version("2.2.20-RC-0.0.1")
+  id("com.gradleup.kctf").version("2.3.10-0.0.2")
 }
 
 dependencies {
   // Add the kctf runtime, it pulls the kotlin test framework transitively
-  testImplementation("org.gradleup.kctf:kctf-runtime:2.2.20-RC-0.0.1")
+  testImplementation("org.gradleup.kctf:kctf-runtime:2.3.10-0.0.2")
 }
 ```
 
